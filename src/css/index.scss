@@ -256,11 +256,6 @@ header {
       }
     }
   }
-
-  .arrow {
-    top: 32%;
-    font-size: 1rem;
-  }
 }
 
 .hidden {
@@ -270,6 +265,9 @@ header {
 // Some mobile fixes
 @media (max-width: 575px) {
   header {
+    h1 {
+      text-align: center;
+    }
     ul {
       scale: 0.65;
       a.commission-btn {
@@ -280,6 +278,10 @@ header {
   }
   #gallery-preview {
     padding: 1.5rem 1.5rem 0 1.5rem;
+    .arrow {
+      top: 32%;
+      font-size: 1rem;
+    }
     .gallery-scroll {
       .gallery-content {
         img {

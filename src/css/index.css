@@ -221,16 +221,15 @@ header ul a img {
   color: #fd9e04;
   text-decoration: none;
 }
-#gallery-preview .arrow {
-  top: 32%;
-  font-size: 1rem;
-}
 
 .hidden {
   display: none;
 }
 
 @media (max-width: 575px) {
+  header h1 {
+    text-align: center;
+  }
   header ul {
     scale: 0.65;
   }
@@ -240,6 +239,10 @@ header ul a img {
   }
   #gallery-preview {
     padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+  #gallery-preview .arrow {
+    top: 32%;
+    font-size: 1rem;
   }
   #gallery-preview .gallery-scroll .gallery-content img {
     width: 45vw;
