@@ -110,7 +110,7 @@ header h1 {
   .project-section .project-container .project-card {
     width: 75vw;
   }
-  .project-section .project-container .project-card .project-info .project-link {
+  .project-section .project-container .project-card .project-info .project-link:hover::after {
     animation: none;
   }
 }

@@ -114,7 +114,7 @@ header {
       .project-card {
         width: 75vw;
         .project-info {
-          .project-link {
+          .project-link:hover::after {
             animation: none; // Removes hover animation on mobile
           }
         }
