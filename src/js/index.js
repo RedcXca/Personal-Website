@@ -6,7 +6,13 @@ $(function () {
     var $galleryScroll = $(".gallery-scroll");
     var $leftArrow = $("#left-arrow");
     var $rightArrow = $("#right-arrow");
-    var scrollAmount = 0.5 * window.innerWidth;
+    var scrollAmount = calculateScrollAmount();
+    function calculateScrollAmount() {
+        return 0.5 * window.innerWidth;
+    }
+    function handleResize() {
+        scrollAmount = calculateScrollAmount();
+    }
     if ($galleryScroll.length && $leftArrow.length && $rightArrow.length) {
         // Function to update arrow visibility
         function updateArrowVisibility() {
@@ -44,8 +50,9 @@ $(function () {
     window.addEventListener("scroll", function () {
         var parallax = document.querySelector(".hero");
         if (parallax) {
-            var scrollPosition = window.pageYOffset;
+            var scrollPosition = window.scrollY;
             parallax.style.backgroundPositionY = scrollPosition * 0.05 + "px";
         }
     });
+    window.addEventListener('resize', handleResize);
 });
