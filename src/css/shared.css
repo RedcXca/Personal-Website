@@ -1,9 +1,5 @@
 /* Everything */
 @font-face {
-  font-family: "Dosis Bold";
-  src: url("../font/Dosis-VariableFont_wght.ttf") format("truetype");
-  font-weight: 500;
-  font-style: bold;
   font-family: "Dosis";
   src: url("../font/Dosis-VariableFont_wght.ttf") format("truetype");
   font-weight: 500;
@@ -94,7 +90,7 @@ nav #navbarNav ul a:hover {
 @media (max-width: 575px) {
   nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: right;
   }
   nav .navbar-collapse {
     width: 100%;
@@ -110,6 +106,7 @@ nav #navbarNav ul a:hover {
   }
   nav #navbarNav ul a {
     padding: 0.5rem 0;
+    display: block;
   }
 }
 

@@ -59,7 +59,7 @@ header .circle-image {
     opacity: 1;
   }
 }
-header section {
+header #gallery-preview {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,7 +121,7 @@ header ul a img {
     width: 6rem;
     height: 6rem;
   }
-  header section {
+  header #gallery-preview {
     align-items: center;
     text-align: center;
   }
