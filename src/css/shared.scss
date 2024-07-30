@@ -58,6 +58,12 @@ html {
   }
 }
 
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 nav {
   width: 100vw;
   display: flex;
@@ -101,7 +107,7 @@ nav {
 
   @media (max-width: 575px) {
     flex-direction: column;
-    align-items: flex-start; // Align items to the left
+    align-items: right;
 
     .navbar-collapse {
       width: 100%; // Ensure the collapse takes full width
@@ -115,11 +121,11 @@ nav {
       ul {
         flex-direction: column;
         width: 100%;
-        gap: 0.75rem;
-        padding: 0.75rem 0;
+        gap: 0;
 
         a {
           padding: 0.5rem 0; // Add padding for better touch targets
+          display: block;
         }
       }
     }
@@ -131,7 +137,7 @@ nav {
   position: fixed;
   z-index: -1;
   inset: 0;
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-image: url("../images/art/Touhou.jpg");
   background-size: cover;

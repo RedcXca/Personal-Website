@@ -17,7 +17,6 @@ header {
   padding: 2rem 0;
   .project-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
     flex-wrap: wrap;
@@ -114,7 +113,7 @@ header {
       .project-card {
         width: 75vw;
         .project-info {
-          .project-link {
+          .project-link:hover::after {
             animation: none; // Removes hover animation on mobile
           }
         }

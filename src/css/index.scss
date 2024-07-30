@@ -36,10 +36,8 @@ header {
     font-weight: 800;
     font-size: 5rem;
     letter-spacing: 0.02rem;
-    color: #fff;
+    color: #dedede;
     text-transform: none;
-    opacity: 0.85;
-    mix-blend-mode: exclusion;
   }
 
   .circle-image {
@@ -128,6 +126,7 @@ header {
 
     h1 {
       font-size: 2.5rem;
+      text-align: center;
     }
 
     .circle-image {
@@ -256,11 +255,6 @@ header {
       }
     }
   }
-
-  .arrow {
-    top: 32%;
-    font-size: 1rem;
-  }
 }
 
 .hidden {
@@ -270,16 +264,34 @@ header {
 // Some mobile fixes
 @media (max-width: 575px) {
   header {
-    ul {
-      scale: 0.65;
-      a.commission-btn {
-        padding: 0.8rem;
-        margin-top: -0.2rem;
+    flex-direction: column;
+    align-items: center;
+    section {
+      max-width: 100vw;
+      #title-container {
+        max-width: 100vw;
+        h1 {
+          font-size: 2.3rem;
+          text-align: center;
+          margin: 0;
+        }
+      }
+      ul {
+        padding: 0;
+        scale: 0.65;
+        a.commission-btn {
+          padding: 0.8rem;
+          margin-top: -0.2rem;
+        }
       }
     }
   }
   #gallery-preview {
     padding: 1.5rem 1.5rem 0 1.5rem;
+    .arrow {
+      top: 32%;
+      font-size: 1rem;
+    }
     .gallery-scroll {
       .gallery-content {
         img {

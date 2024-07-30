@@ -11,7 +11,15 @@ $(() => {
     const $galleryScroll = $(".gallery-scroll");
     const $leftArrow = $("#left-arrow");
     const $rightArrow = $("#right-arrow");
-    const scrollAmount = 0.5 * window.innerWidth;
+    let scrollAmount: number = calculateScrollAmount();
+
+    function calculateScrollAmount(): number {
+        return 0.5 * window.innerWidth;
+    }
+
+    function handleResize() {
+        scrollAmount = calculateScrollAmount();
+    }
 
     if ($galleryScroll.length && $leftArrow.length && $rightArrow.length) {
 
@@ -62,8 +70,10 @@ $(() => {
     window.addEventListener("scroll", function () {
         const parallax = document.querySelector(".hero") as HTMLElement;
         if (parallax) {
-            let scrollPosition = window.pageYOffset;
+            let scrollPosition = window.scrollY;
             parallax.style.backgroundPositionY = scrollPosition * 0.05 + "px";
         }
     });
+
+    window.addEventListener('resize', handleResize);
 });
