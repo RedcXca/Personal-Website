@@ -58,6 +58,12 @@ html {
   }
 }
 
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 nav {
   width: 100vw;
   display: flex;
@@ -131,7 +137,7 @@ nav {
   position: fixed;
   z-index: -1;
   inset: 0;
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-image: url("../images/art/Touhou.jpg");
   background-size: cover;
