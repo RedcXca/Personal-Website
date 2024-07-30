@@ -265,27 +265,25 @@ header {
 // Some mobile fixes
 @media (max-width: 575px) {
   header {
-    section {
-      max-width: 100vw;
-    }
     flex-direction: column;
     align-items: center;
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-    #title-container {
+    section {
       max-width: 100vw;
-      h1 {
-        font-size: 2.3rem;
-        text-align: center;
-        margin: 0;
+      #title-container {
+        max-width: 100vw;
+        h1 {
+          font-size: 2.3rem;
+          text-align: center;
+          margin: 0;
+        }
       }
-    }
-    ul {
-      padding: 0;
-      scale: 0.65;
-      a.commission-btn {
-        padding: 0.8rem;
-        margin-top: -0.2rem;
+      ul {
+        padding: 0;
+        scale: 0.65;
+        a.commission-btn {
+          padding: 0.8rem;
+          margin-top: -0.2rem;
+        }
       }
     }
   }
